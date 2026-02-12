@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Moni | Portafolio</title>
+  <meta name="description" content="Portafolio básico para GitHub Pages." />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav container">
+      <a class="logo" href="#inicio">Moni</a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false">
+        ☰
+      </button>
+
+      <ul class="menu" id="menu">
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <section class="hero container">
+      <div class="hero-text">
+        <h1>Hola, soy <span class="accent">Moni</span> 👋</h1>
+        <p>
+          Full stack + Educación + IA. Este es un sitio básico para publicar en GitHub Pages.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="#proyectos">Ver proyectos</a>
+          <a class="btn" href="#contacto">Contactar</a>
+        </div>
+
+        <div class="chips">
+          <span class="chip">React</span>
+          <span class="chip">Node.js</span>
+          <span class="chip">Python</span>
+          <span class="chip">EdTech</span>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <h3>Disponible para</h3>
+        <ul>
+          <li>✅ Proyectos web</li>
+          <li>✅ Diseño instruccional</li>
+          <li>✅ Prototipos con IA</li>
+        </ul>
+        <p class="mini">
+          Última actualización: <span id="lastUpdate">—</span>
+        </p>
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="section container">
+      <h2>Sobre mí</h2>
+      <p>
+        Aquí puedes poner una mini bio (2–4 líneas). Ejemplo: “Soy docente universitaria y desarrolladora
+        full stack, enfocada en proyectos de educación, datos e innovación”.
+      </p>
+    </section>
+
+    <section id="proyectos" class="section container">
+      <div class="section-head">
+        <h2>Proyectos</h2>
+        <p>Algunos trabajos destacados (puedes reemplazar links y descripciones).</p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Proyecto 1</h3>
+          <p>Dashboard / app / landing… una frase de valor.</p>
+          <div class="card-actions">
+            <a class="link" href="#" target="_blank" rel="noreferrer">Demo</a>
+            <a class="link" href="#" target="_blank" rel="noreferrer">Código</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Proyecto 2</h3>
+          <p>Algo con IA, datos, educación o web full stack.</p>
+          <div class="card-actions">
+            <a class="link" href="#" target="_blank" rel="noreferrer">Demo</a>
+            <a class="link" href="#" target="_blank" rel="noreferrer">Código</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Proyecto 3</h3>
+          <p>Un prototipo simple y bien presentado.</p>
+          <div class="card-actions">
+            <a class="link" href="#" target="_blank" rel="noreferrer">Demo</a>
+            <a class="link" href="#" target="_blank" rel="noreferrer">Código</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contacto" class="section container">
+      <h2>Contacto</h2>
+      <p>Escríbeme y te respondo. (Formulario demo con validación JS)</p>
+
+      <form class="form" id="contactForm" novalidate>
+        <label>
+          Nombre
+          <input type="text" name="name" id="name" placeholder="Tu nombre" required minlength="2" />
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" id="email" placeholder="tu@email.com" required />
+        </label>
+
+        <label>
+          Mensaje
+          <textarea name="message" id="message" placeholder="Cuéntame qué necesitas" required minlength="10"></textarea>
+        </label>
+
+        <button class="btn primary" type="submit">Enviar</button>
+        <p class="status" id="status"></p>
+      </form>
+
+      <div class="social">
+        <a class="link" href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a class="link" href="#" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="link" href="mailto:tu_correo@ejemplo.com">Email</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Moni</span>
+      <a class="link" href="#inicio">Volver arriba ↑</a>
+    </div>
+  </footer>
+
+  <script src="active.js"></script>
+</body>
+</html>
